@@ -1,56 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - IT Artificer</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
 
-    <link rel="stylesheet" href="Contact.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-  </head>
-  <body>
-    <nav class="nav"></nav>
-    <div class="navbar" >
-      
-      <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="Services.html" >Services</a></li>
-        <li><a href="Our Teame.html" >Our Teame</a></li>
-        <li><a href="About.html" >About</a></li>
-        <li><a href="Contact.html" >Contact</a></li>
+  <!-- NAVBAR -->
+  <nav class="w-full bg-black border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <ul class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-8 py-4">
+        <div class="flex items-center">
+          <img src="https://itartificer.com/wp-content/uploads/2025/06/ITA-White-logo-1.png" alt="logo" class="h-8 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+          <li><a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a></li>
+          <li><a href="Services.html" class="hover:text-blue-400 transition duration-300">Services</a></li>
+          <li><a href="Our Team.html" class="hover:text-blue-400 transition duration-300">Our Team</a></li>
+          <li><a href="About.html" class="hover:text-blue-400 transition duration-300">About</a></li>
+          <li><a href="Contact.html" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+        </div>
       </ul>
-    
     </div>
   </nav>
-    <h1 class="top"><span>Contact With Us</span></h1>
-    <div class="img">
-      <img
-        src="https://itartificer.com/wp-content/uploads/2020/11/about-us.png.webp"
-        alt="img"
-        
-      /> 
-      <form action="">
-      <div class="form">
-        
-        <label for="">Name :</label>
-        <input type="text" placeholder="Enter Your Name..." required />
-        <label for="">Email :</label>
-        <input type="email" placeholder="Enter your Email..."  required/>
-        <label for="">Phone No :</label>
-        <input type="number" placeholder="Phone No"  required/>
-        <label for="">Subject :</label>
-        <input type="text" placeholder="Enter Subject "  required/>
-        <label for="">Masseage :</label>
-        <textarea
-          name=""
-          id=""
-          style="width: 574px; height: 120px"
-          placeholder="Masseage"
-        ></textarea>
-        <button type="submit">Send To US</button>
-      
-      </div>
-    </form>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    <!-- CONTACT HEADING -->
+    <div class="text-center py-16 px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-400">Contact With Us</h1>
     </div>
-  </body>
+
+    <!-- CONTACT CONTENT -->
+    <div class="px-4 pb-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- IMAGE -->
+          <div class="order-2 lg:order-1">
+            <img 
+              src="https://itartificer.com/wp-content/uploads/2020/11/about-us.png.webp" 
+              alt="Contact Us" 
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+
+          <!-- CONTACT FORM -->
+          <div class="order-1 lg:order-2">
+            <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+              <form action="#" class="space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Enter Your Name..." 
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-blue-400 transition duration-300"
+                  />
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Enter your Email..." 
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-blue-400 transition duration-300"
+                  />
+                </div>
+                
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone No</label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    placeholder="Phone No" 
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-blue-400 transition duration-300"
+                  />
+                </div>
+                
+                <div>
+                  <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    placeholder="Enter Subject" 
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-blue-400 transition duration-300"
+                  />
+                </div>
+                
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                  <textarea 
+                    id="message" 
+                    rows="5" 
+                    placeholder="Message"
+                    required
+                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-blue-400 transition duration-300 resize-none"
+                  ></textarea>
+                </div>
+                
+                <button 
+                  type="submit"
+                  class="w-full py-3 bg-blue-600 hover:bg-blue-700 transition duration-300 rounded-lg font-semibold text-lg"
+                >
+                  Send To US
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-8 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-gray-400">© 2024 IT Artificer. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
