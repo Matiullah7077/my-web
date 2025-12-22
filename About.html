@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    
-    <link rel="stylesheet" href="About.css" />
-    <link rel="stylesheet" href="Navbar.css">
-  </head>
-  <body>
-    <div class="navbar">
-        <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="Services.html">Services</a></li>
-          <li><a href="Our Teame.html" >Our Team</a></li>
-          <li><a href="About.html" >About Us</a></li>
-          <li><a href="Contact.html" >Contact</a></li>
-        </ul>
-      </div>
-    <div class="htag">
-    <h1 id="one">About</h1>
-</div>
-    <div class="main">
-      <img class="two"
-        src="https://itartificer.com/wp-content/uploads/2020/11/digital-agency-about-img.jpg.webp"
-        alt="image"
-      />
-      <div class="text">
-        <h4 id="three">About Us</h4><br>
-        <h2>About Us Our 11-Years Evolution</h2>
-        <br />
-        
-        <p>
-          Founded in 2012 as a training institute focused on building technical
-          talent, IT Artificer began with a simple mission: to empower
-          individuals with practical, job-ready skills in software and
-          technology.
-        </p><br>
-        <p>
-          Over time, our passion for quality, innovation, and real-world impact
-          led us beyond education and into full-scale software development.
-          Today, IT Artificer stands as a dynamic software solutions company,
-          delivering custom-built applications, enterprise platforms, and
-          digital services to clients across industries.
-        </p><br>
-        <p>
-          Our roots in training have shaped our commitment to excellence, making
-          us not just developers—but thoughtful problem-solvers. Eleven years
-          on, our journey is still driven by the same values: learn deeply,
-          build boldly, and grow continuously.
-        </p><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - IT Artificer</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="w-full bg-black border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <ul class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-8 py-4">
+        <div class="flex items-center">
+          <img src="https://itartificer.com/wp-content/uploads/2025/06/ITA-White-logo-1.png" alt="logo" class="h-8 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+          <li><a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a></li>
+          <li><a href="Services.html" class="hover:text-blue-400 transition duration-300">Services</a></li>
+          <li><a href="Our Team.html" class="hover:text-blue-400 transition duration-300">Our Team</a></li>
+          <li><a href="About.html" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+          <li><a href="Contact.html" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    <!-- ABOUT HEADING -->
+    <div class="text-center py-16 px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-400">About Us</h1>
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <div class="px-4 pb-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- IMAGE -->
+          <div class="order-2 lg:order-1">
+            <img 
+              src="https://itartificer.com/wp-content/uploads/2020/11/digital-agency-about-img.jpg.webp" 
+              alt="About Us" 
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+
+          <!-- TEXT CONTENT -->
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">About Us: Our 11-Years Evolution</h2>
+            
+            <div class="space-y-6 text-gray-300 leading-relaxed">
+              <p>
+                Founded in 2012 as a training institute focused on building technical talent, IT Artificer began with a simple mission: to empower individuals with practical, job-ready skills in software and technology.
+              </p>
+              
+              <p>
+                Over time, our passion for quality, innovation, and real-world impact led us beyond education and into full-scale software development. Today, IT Artificer stands as a dynamic software solutions company, delivering custom-built applications, enterprise platforms, and digital services to clients across industries.
+              </p>
+              
+              <p>
+                Our roots in training have shaped our commitment to excellence, making us not just developers—but thoughtful problem-solvers. Eleven years on, our journey is still driven by the same values: learn deeply, build boldly, and grow continuously.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-8 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-gray-400">© 2024 IT Artificer. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
