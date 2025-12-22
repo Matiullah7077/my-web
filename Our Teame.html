@@ -1,90 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our team</title>
-    
-    <link rel="stylesheet" href="Our Teame.css" />
-    <link rel="stylesheet" href="Navbar.css">
-  </head>
-  <body>
-    <div class="navbar">
-        <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="Services.html" >Services</a></li>
-          <li><a href="Our Teame.html" >Our Team</a></li>
-          <li><a href="About.html" >About Us</a></li>
-          <li><a href="Contact.html" >Contact</a></li>
-        </ul>
-      </div>
-    <div class="one">
-      <h2>Meet the Minds Behind IT Artificer</h2>
-      <p>
-        Get to know the passionate professionals, creative thinkers, and tech
-        <br />
-        experts who turn bold ideas into real-world digital solutions at IT
-        Artificer.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team - IT Artificer</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+  <nav class="w-full bg-black border-b border-gray-700 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <ul class="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-8 py-4">
+        <div class="flex items-center">
+          <img src="https://itartificer.com/wp-content/uploads/2025/06/ITA-White-logo-1.png" alt="logo" class="h-8 w-auto">
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+          <li><a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a></li>
+          <li><a href="Services.html" class="hover:text-blue-400 transition duration-300">Services</a></li>
+          <li><a href="Our Team.html" class="hover:text-blue-400 transition duration-300">Our Team</a></li>
+          <li><a href="About.html" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+          <li><a href="Contact.html" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    <!-- TEAM INTRO SECTION -->
+    <div class="text-center py-16 px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Meet the Minds Behind IT Artificer</h1>
+      <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed">
+        Get to know the passionate professionals, creative thinkers, and tech experts who turn bold ideas into real-world digital solutions at IT Artificer.
       </p>
     </div>
-    <div class="main">
-      <div class="img">
-        <img
-          src="https://itartificer.com/wp-content/uploads/2025/06/CEO.png.webp"
-          alt="team image"
-        />
-        <div class="img-part1">
-          <h3>Haider Ali</h3>
-          <p>CEO & FOUNDER</p>
+
+    <!-- TEAM GRID -->
+    <div class="px-4 pb-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- TEAM MEMBER 1 -->
+          <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-800 transition duration-300">
+            <img src="https://itartificer.com/wp-content/uploads/2025/06/CEO.png.webp" alt="Haider Ali" class="w-40 h-40 mx-auto rounded-full object-cover mb-6">
+            <h3 class="font-bold text-xl mb-2">Haider Ali</h3>
+            <p class="text-blue-400 mb-4">CEO & FOUNDER</p>
+            <p class="text-sm text-gray-300">
+              Visionary leader driving innovation and excellence at the core of IT Artificer's mission.
+            </p>
+          </div>
+
+          <!-- TEAM MEMBER 2 -->
+          <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-800 transition duration-300">
+            <img src="https://itartificer.com/wp-content/uploads/2025/06/BDO.jpg.webp" alt="Sheraz Ahmad" class="w-40 h-40 mx-auto rounded-full object-cover mb-6">
+            <h3 class="font-bold text-xl mb-2">Sheraz Ahmad</h3>
+            <p class="text-blue-400 mb-4">Project Manager</p>
+            <p class="text-sm text-gray-300">
+              Delivers projects with precision, leading teams from concept to successful completion.
+            </p>
+          </div>
+
+          <!-- TEAM MEMBER 3 -->
+          <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-800 transition duration-300">
+            <img src="https://itartificer.com/wp-content/uploads/2025/06/vector.jpg.webp" alt="Najm U Din" class="w-40 h-40 mx-auto rounded-full object-cover mb-6">
+            <h3 class="font-bold text-xl mb-2">Najm U Din</h3>
+            <p class="text-blue-400 mb-4">COO - ITA</p>
+            <p class="text-sm text-gray-300">
+              Ensures smooth operations and strategic execution across all service departments.
+            </p>
+          </div>
+
+          <!-- TEAM MEMBER 4 -->
+          <div class="bg-gray-900 p-6 rounded-lg text-center hover:bg-gray-800 transition duration-300">
+            <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/975607b9bee3ef4c11fecd5c1798cf7d~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=de8ff072&x-expires=1766584800&x-signature=ivpJnJiZvh8qR9UidxlrEwTziyI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1" alt="Mati Ullah" class="w-40 h-40 mx-auto rounded-full object-cover mb-6">
+            <h3 class="font-bold text-xl mb-2">Mati Ullah</h3>
+            <p class="text-blue-400 mb-4">Web Developer</p>
+            <p class="text-sm text-gray-300">
+              Aspiring web developer learning HTML, CSS, JavaScript, and React, passionate about building clean and responsive web applications.
+            </p>
+          </div>
         </div>
-        <p id="ptag">
-          Visionary leader driving innovation and excellence at the core of IT
-          Artificer’s mission.
-        </p>
-      </div>
-      <div class="img">
-        <img
-          src="https://itartificer.com/wp-content/uploads/2025/06/BDO.jpg.webp "
-        />
-        <div class="img-part1">
-          <h3>Sheraz Ahmad</h3>
-          <p>Project Manager</p>
-        </div>
-        <p id="ptag">
-          Delivers projects with precision, leading teams from concept to
-          successful completion
-        </p>
-      </div>
-      <div class="img">
-        <img
-          src="https://itartificer.com/wp-content/uploads/2025/06/vector.jpg.webp"
-          style="width: 225px"
-          alt=""
-        />
-        <div class="img-part1">
-          <h3>Najm U Din</h3>
-          <span>COO - ITA</span>
-        </div>
-        <p id="ptag">
-          Ensures smooth operations and strategic execution across all service
-          departments.
-        </p>
-      </div>
-      <div class="img">
-        <img
-          src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/975607b9bee3ef4c11fecd5c1798cf7d~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=de8ff072&x-expires=1766584800&x-signature=ivpJnJiZvh8qR9UidxlrEwTziyI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1" style="width: 220px;"
-          alt=""
-        />
-        <div class="img-part1">
-            <h3>Mati Ullah  </h3>
-            <span>Web Developer</span>
-        </div>
-        <p id="ptag">
-            Aspiring web developer learning HTML, CSS, JavaScript, and React, passionate about building clean and responsive web applications
-        </p>
       </div>
     </div>
-  </body>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 py-8 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-gray-400">© 2024 IT Artificer. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
-
-
